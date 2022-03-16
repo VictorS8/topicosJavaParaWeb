@@ -24,3 +24,6 @@ Use o Archetype como:
 </dependency>
 ```
 2. Maven -> Update Project (Alt + F5)
+
+## Rodar o servidor dentro do Eclipse
+- Windows -> Preferences -> Search on filter "Web Browser" -> Choose "Use internal web browser"
