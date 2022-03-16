@@ -5,13 +5,13 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
   <servlet>
-  	<servlet-name>AulaUm</servlet-name>
-  	<display-name>AulaUm</display-name>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
   	<description></description>
-  	<servlet-class>aula1.AulaUm</servlet-class>
+  	<servlet-class>aula1.Login</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>AulaUm</servlet-name>
-  	<url-pattern>/AulaUm</url-pattern>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
 </web-app>
