@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>aula1.Login</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>BeanUtilities</servlet-name>
+  	<display-name>BeanUtilities</display-name>
+  	<description></description>
+  	<servlet-class>aula2.BeanUtilities</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>BeanUtilities</servlet-name>
+  	<url-pattern>/BeanUtilities</url-pattern>
   </servlet-mapping>
 </web-app>
