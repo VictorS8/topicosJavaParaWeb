@@ -12,22 +12,34 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.commons.beanutils.BeanUtils;
 
 class Carro {
-	// Mocking these informations
-	String ano = "2001";
-	String marca = "Fiat";
-	String modelo = "Uno";
+	String ano;
+	String marca;
+	String modelo;
 	
 	String getAno() {
-		return this.ano;
+		return ano;
+	}
+	
+	void setAno(String ano) {
+		this.ano = ano;
 	}
 	
 	String getMarca() {
-		return this.marca;
+		return marca;
+	}
+	
+	void setMarca(String marca) {
+		this.marca = marca;
 	}
 	
 	String getModelo() {
-		return this.modelo;
+		return modelo;
 	}
+	
+	void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
 }
 
 /**
@@ -35,15 +47,10 @@ class Carro {
  */
 public class BeanUtilities extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
 	
-	public static void populateBean(Object formBean, HttpServletRequest request) {
-		populateBean(formBean, request.getParameterMap());
-	}
-	
-	public static void populateBean(Object bean, Map propertyMap) {
+	static void populateBean(Object bean, Map map) {
 		try {
-			BeanUtils.populate(bean, propertyMap);
+			BeanUtils.populate(bean, map);
 		} catch (Exception e) {}
 	}
     /**
@@ -63,11 +70,16 @@ public class BeanUtilities extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		
 		Carro c = new Carro();
-		BeanUtilities.populateBean(c, request);
+		
+		BeanUtilities.populateBean(c, request.getParameterMap());
+		
+		System.out.println("GetParameter Map = " + request.getParameterMap());
+		
 		out.println("<html>");
-		out.println("<h1> Ano: " + c.getAno() + "</h1>");
-		out.println("<h1> Marca: " + c.getMarca() + "</h1>");
-		out.println("<h1> Modelo: " + c.getModelo() + "</h1>");
+		out.println("<h1>Resultados de busca</h1>");
+		out.println("<h2> Ano: " + c.getAno() + "</h2>");
+		out.println("<h2> Marca: " + c.getMarca() + "</h2>");
+		out.println("<h2> Modelo: " + c.getModelo() + "</h2>");
 		out.println("</html>");
 	}
 
