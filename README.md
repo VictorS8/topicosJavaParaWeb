@@ -10,6 +10,10 @@ Introducao ao servlet e setup do projeto
 
 Recuperar parametros de requisicao com BeanUtils
 
+### Aula 3
+
+Trabalhando com sessions
+
 ## Problemas no setup do projeto
 
 ### Caso Eclipse nao tenha a aba de Servers
