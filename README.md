@@ -14,6 +14,10 @@ Recuperar parametros de requisicao com BeanUtils
 
 Trabalhando com sessions
 
+### [Aula 4](/src/main/java/aula4)
+
+Usando JSP e JSP Use Bean
+
 ## Problemas no setup do projeto
 
 ### Caso Eclipse nao tenha a aba de Servers
