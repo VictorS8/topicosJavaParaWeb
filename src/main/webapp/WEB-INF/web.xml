@@ -16,24 +16,6 @@
   	<description></description>
   	<servlet-class>aula2.BeanUtilities</servlet-class>
   </servlet>
-  <servlet>
-  	<servlet-name>AddItem</servlet-name>
-  	<display-name>AddItem</display-name>
-  	<description></description>
-  	<servlet-class>aula3.AddItem</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>CarrinhoClean</servlet-name>
-  	<display-name>CarrinhoClean</display-name>
-  	<description></description>
-  	<servlet-class>aula3.CarrinhoClean</servlet-class>
-  </servlet>
-  <servlet>
-  	<servlet-name>CheckCarrinho</servlet-name>
-  	<display-name>CheckCarrinho</display-name>
-  	<description></description>
-  	<servlet-class>aula3.CheckCarrinho</servlet-class>
-  </servlet>
   <servlet-mapping>
   	<servlet-name>Login</servlet-name>
   	<url-pattern>/Login</url-pattern>
@@ -42,16 +24,5 @@
   	<servlet-name>BeanUtilities</servlet-name>
   	<url-pattern>/BeanUtilities</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>AddItem</servlet-name>
-  	<url-pattern>/AddItem</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>CarrinhoClean</servlet-name>
-  	<url-pattern>/CarrinhoClean</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>CheckCarrinho</servlet-name>
-  	<url-pattern>/CheckCarrinho</url-pattern>
-  </servlet-mapping>
+  
 </web-app>
